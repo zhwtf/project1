@@ -3,7 +3,7 @@
 */
 
 body {
-	background-color: #c00;
+	background-color: #a6192e;
 	padding: 60px;
 
 
@@ -21,6 +21,7 @@ div.main {
 div.block1{
 	background-color: #eff5f5;
 	width: 1060px;
+	height: 450px;
 	border: 2px solid #ccc;
 }
 
@@ -33,3 +34,19 @@ table, th, td{
 	border: 1px solid #ccc;
 	border-collapse: collapse;
 }
+
+button.rightside{
+	float: right;
+	color: white;
+	background-color: #c00;
+	font-size: 12px;
+  	text-align: center;
+  	height: 30px;
+  	width: 70px;
+  	margin: 10px;
+}
+
+
+
+
+

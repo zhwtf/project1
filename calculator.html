@@ -8,11 +8,12 @@
 
 
 <body>
+<script type="text/javascript" src="calculator.js"></script>
 <div class= "main">
 <h1>Grade Calculator</h1>
 <div class="block1">
 	<h2>Activities</h2>
-	<p>Give grades to the number activities:</p>
+	<p>Give grades to the numeric activities:</p>
 
 	<br>
 	<form id='form1'>
@@ -28,37 +29,48 @@
 		<tr>
 			<td><input class = 'activity' type="text" name="Activity 1" value="Activity 1" placeholder="Activity 1"></td>
 			<td><input class="shortname" type="text" name="A1" value="A1" placeholder="A1"></td>
-			<td><input class="weight" type="number" name="Weight" placeholder="weight" ></td>
-			<td><input id = 'A1_num' type="number" name="A1_num" onkeyup="calculator()"> / <input id = 'A1_dem' type="number" name="A1_dem" onkeyup="calculator()"></td>
+			<td><input class="weight" type="text" name="Weight" placeholder="weight" ></td>
+			<td><input id = 'A1_num' type="text" name="A1_num" onkeyup="calculator()"> / <input id = 'A1_den' type="text" name="A1_den" onkeyup="calculator()"></td>
 			<td id="percent1" class = 'percentage'></td>
 		</tr>
 
 		<tr>
 			<td><input class="activity" type="text" name="Activity 2" value="Activity 2" placeholder="Activity 2"></td>
 			<td><input class="shortname" type="text" name="A2" value="A2" placeholder="A2"></td>
-			<td><input class="weight" type="number" name="Weitght" placeholder="weight"></td>
-			<td><input id = "A2_num" type="number" name="A2_num" onkeyup="calculator()"> / <input id = 'A2_dem' type="number" name="A2_dem" onkeyup="calculator()"></td>
+			<td><input class="weight" type="text" name="Weitght" placeholder="weight"></td>
+			<td><input id = "A2_num" type="text" name="A2_num" onkeyup="calculator()"> / <input id = 'A2_den' type="text" name="A2_den" onkeyup="calculator()"></td>
 			<td id = 'percent2' class = 'percentage'></td>
 		</tr>
 
 		<tr>
 			<td><input class = 'activity' type="text" name="Activity 3" value="Activity 3" placeholder="Activity 3"></td>
 			<td><input class="shortname" type="text" name="A3" value="A3" placeholder="A3"></td>
-			<td><input class="weight" type="number" name="Weight" placeholder="weight" ></td>
-			<td><input id = 'A3_num' type="number" name="A3_num" onkeyup="calculator()"> / <input id = 'A3_dem' type="number" name="A3_dem" onkeyup="calculator()"></td>
+			<td><input class="weight" type="text" name="Weight" placeholder="weight" ></td>
+			<td><input id = 'A3_num' type="text" name="A3_num" onkeyup="calculator()"> / <input id = 'A3_den' type="text" name="A3_den" onkeyup="calculator()"></td>
 			<td id="percent3" class = 'percentage'></td>
 		</tr>
 
 		<tr>
 			<td><input class = 'activity' type="text" name="Activity 4" value="Activity 4" placeholder="Activity 4"></td>
 			<td><input class="shortname" type="text" name="A4" value="A4" placeholder="A4"></td>
-			<td><input class="weight" type="number" name="Weight" placeholder="weight" ></td>
-			<td><input id = 'A4_num' type="number" name="A4_num" onkeyup="calculator()"> / <input id = 'A4_dem' type="number" name="A4_dem" onkeyup="calculator()"></td>
+			<td><input class="weight" type="text" name="Weight" placeholder="weight" ></td>
+			<td><input id = 'A4_num' type="text" name="A4_num" onkeyup="calculator()"> / <input id = 'A4_den' type="text" name="A4_den" onkeyup="calculator()"></td>
 			<td id="percent4" class = 'percentage'></td>
 		</tr>
 		
 	</table>
+	<p id='result'>Result</p>
+	
+	<p id='show'></p>
+	<span>
+	
+	<button class="rightside" type="button" onclick="mean()">MEAN</button>
+	<button class="rightside" type="button" onclick="weighted()">WEIGHTED</button>	
+	</span>
+	
 	</form>
+
+	
 </div>
 </div>
 
