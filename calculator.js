@@ -24,3 +24,21 @@ function calculator() {
   }
 }
 
+function mean(){
+  var sum=0;
+  var count=0;
+  for (var i = 1; i<=RowCount; i++){
+    var numerator = document.getElementById("A"+i+"_num").value;
+    var denominator = document.getElementById("A"+i+"_den").value;
+    var percent = numerator / denominator;
+    percent = Math.round(percent * 100) / 100;
+    if (isFinite(percent)==true) {
+      sum = sum + percent;
+      count++;
+    }
+  }
+  var mean = sum / count * 100;
+  mean = Math.round(mean*100) / 100;
+  document.getElementById('show').innerHTML = "Mean: " + mean + "%";
+}
+
