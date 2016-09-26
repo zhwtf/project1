@@ -28,10 +28,13 @@ div.block1{
 th {
 	text-align: left;
 	background-color: #e6e6e5;
+	border:2px solid #ccc;
+	padding: 6px;
+	height: 20px;
 }
 
-table, th, td{
-	height: 50px;
+table, tr, td{
+	height: 58px;
 	border: 2px solid #ccc;
 	border-collapse: collapse;
 	table-layout: fixed;
@@ -48,7 +51,13 @@ button.rightside{
   	margin: 10px;
 }
 
-
+input{
+	text-align: center;
+	width: 80px;
+	height: 20px;
+	border-color: rgb(204,208,211);
+	border-collapse: collapse;
+}
 
 
 
